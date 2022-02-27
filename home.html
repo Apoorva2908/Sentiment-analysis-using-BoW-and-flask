@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Moview Review Sentiment Predictor</title>
+{% endblock %}
+
+{% block body %}
+<center>
+<div class="content">
+    <h1>Hey!!!</h1>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        form {
+            display: inline-block;
+        }
+    </style>
+
+
+    <form actions="/result.html" class = "form" method = "POST">
+        <div class="row"></div>
+        <h2>Enter your review here:</h2>
+        <input type="text" name="review" id="review">
+        <a href="/result.html"><input class = "btn btn-primary" type="submit" value = "Submit"></a>
+    </form>
+    
+    <a href="/data.html">Data</a>
+    <br>
+    <a href="/result.html">See_Results</a>
+
+    
+    
+    
+</div>
+</center>
+{% endblock %}
